@@ -30,7 +30,9 @@ spec:
       terminationGracePeriodSeconds: 60
       containers:
         - name: order-service
-          image: 829999272698.dkr.ecr.us-east-1.amazonaws.com/shushank:latest
+          image:829999272698.dkr.ecr.us-east-1.amazonaws.com/order-service:latest
+
+
 
           imagePullPolicy: Always
           ports:
