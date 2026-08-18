@@ -28,6 +28,11 @@ spec:
         prometheus.io/path: "/api/v1/actuator/prometheus"
         prometheus.io/port: "8081"
     spec:
+      dnsPolicy:"None"
+      dnsConfig:
+      nameservers:
+      -8.8.8.8
+      -1.1.1.1
       serviceAccountName: default
       terminationGracePeriodSeconds: 60
       containers:
