@@ -31,8 +31,8 @@ spec:
       dnsPolicy: "None"
       dnsConfig:
       nameservers:
-       - 8.8.8.8
-       - 1.1.1.1
+        - 8.8.8.8
+        - 1.1.1.1
       serviceAccountName: default
       terminationGracePeriodSeconds: 60
       containers:
