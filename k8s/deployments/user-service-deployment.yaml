@@ -75,16 +75,16 @@ spec:
             httpGet:
               path: /api/v1/actuator/health/readiness
               port: 8081
-            initialDelaySeconds: 30
+            initialDelaySeconds: 60
             periodSeconds: 10
-            failureThreshold: 3
+            failureThreshold: 5
           livenessProbe:
             httpGet:
               path: /api/v1/actuator/health/liveness
               port: 8081
-            initialDelaySeconds: 60
+            initialDelaySeconds: 120
             periodSeconds: 30
-            failureThreshold: 3
+            failureThreshold: 5
           lifecycle:
             preStop:
               exec:
